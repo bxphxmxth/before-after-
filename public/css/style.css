@@ -1,3 +1,7 @@
+section{
+    max-width: max-content;
+    position: relative;
+}
 /* Exo 1 */
 
 
@@ -7,7 +11,7 @@
     border: black solid 3px;
   }
   
-  #exo1 h1::before{
+  #exo1>h1::before{
   
   content: "";
   position: absolute;
@@ -19,7 +23,7 @@
   
   }
   
-  #exo1 h1:hover::before{
+  #exo1>h1:hover::before{
     width: 100%;
   }
 
@@ -28,32 +32,32 @@
 
 /* Exo 2 */
 
-#exo2 h1{
+#exo2>h1{
     position: relative;
     border: solid black 3px;
     max-width: max-content;
 }
 
-#exo2 h1::before{
+#exo2>h1::before{
 
 content: "";
 position: absolute;
-bottom: 0%;
-margin-left: 45%;
-height: 5px;
-width: 5px;
 
+bottom: 0%;
+height: 5px;
+width: 0px;
+left: 50%;
 background-color: red;
 transition: 2s;
 
 
 }
 
-
-#exo2 h1:hover::before{
+#exo2>h1:hover::before{
 
     width: 100%;
-    left:0 ;
+    left: 0 ;
+
     
 
 }
@@ -65,7 +69,7 @@ transition: 2s;
 /* Exo 3 */
 
 
-#exo3 h1{
+#exo3>h1{
     position: relative;
     border: solid black 3px;
     max-width: max-content;
@@ -73,7 +77,7 @@ transition: 2s;
 }
 
 
-#exo3 h1::before{
+#exo3>h1::before{
     content: "";
     position: absolute;
     bottom: 0px;
@@ -83,7 +87,7 @@ transition: 2s;
     transition: 2s;
 }
 
-#exo3 h1:hover::before{
+#exo3>h1:hover::before{
     height: 100%;
 
 }
